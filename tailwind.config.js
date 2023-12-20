@@ -19,13 +19,12 @@ export default {
         mediumSlateBlue: "#5D5FEF",
       },
     },
-    screens: {},
   },
-  // purge: ["./index.html", "./src/**/*.{svelte,js,ts}"], //for unused css
-  content: [
-    "./index.html",
-    "./src/**/*.{svelte,js,ts}", // Include Svelte files
-  ],
+  purge: ["./index.html", "./src/**/*.{svelte,js,ts}"], //for unused css
+  // content: [
+  //   "./index.html",
+  //   "./src/**/*.{svelte,js,ts}", // Include Svelte files
+  // ],
   variants: {
     extend: {},
   },
