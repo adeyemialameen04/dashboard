@@ -3,9 +3,6 @@
   import { asideData } from "../../data";
 
   export let show;
-  if (show && window.innerWidth <= 768) {
-    document.body.style.overflowY = "hidden";
-  }
 </script>
 
 <div class:showAside={show} class="overlay">
@@ -101,7 +98,8 @@
       height: 100%;
       background: rgba(0, 0, 0, 0.5);
       transition: all 350ms ease-in-out;
-      visibility: hidden;
+      /* visibility: hidden; */
+      display: none;
       z-index: -1;
     }
     aside {
@@ -115,6 +113,7 @@
     .showAside {
       visibility: visible;
       z-index: 19;
+      display: block;
       /* display: flex; */
       /* opacity: 1;
       visibility: visible;

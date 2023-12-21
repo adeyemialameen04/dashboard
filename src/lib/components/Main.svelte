@@ -9,7 +9,7 @@
   <Navbar on:click />
   <main class="px-3">
     <div class="today-grid-cont">
-      <Card className="flex gap-7 flex-col">
+      <Card className="h-fit flex gap-7 flex-col">
         <div class="flex justify-between w-full">
           <div>
             <h3
@@ -45,7 +45,7 @@
           {/each}
         </div>
       </Card>
-      <Card className="flex flex-col gap-8">
+      <Card className="h-fit flex flex-col gap-8">
         <h3 class="font-semibold text-[#05004E] text-[1.125rem] mb-1">
           Visitor Insights
         </h3>

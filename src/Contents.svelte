@@ -1,7 +1,6 @@
 <script>
   import Aside from "./lib/components/Aside.svelte";
   import Main from "./lib/components/Main.svelte";
-  import Navbar from "./lib/components/Navbar.svelte";
   let show = false;
   const handleNavbar = () => {
     show = !show;
@@ -12,10 +11,17 @@
     } else {
       console.log("FALLLLSEE");
     }
+
+    if (show && window.innerWidth <= 768) {
+      document.body.style.overflowY = "hidden";
+      console.log("hidden");
+    } else {
+      document.body.style.overflowY = "scroll";
+    }
   };
 
   window.addEventListener("resize", () => {
-    show = window.innerWidth > 768;
+    show = false;
   });
 </script>
 
