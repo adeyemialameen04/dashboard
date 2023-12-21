@@ -2,12 +2,13 @@
   import { todaySalesData } from "../../data";
   import Bg from "./Bg.svelte";
   import Card from "./Card.svelte";
+  import Graph from "./Graph.svelte";
   import Navbar from "./Navbar.svelte";
 </script>
 
 <div class="flex flex-col w-full">
   <Navbar on:click />
-  <main class="px-3">
+  <main class="px-4 bg-[#FAFBFC] py-4 flex flex-col gap-8">
     <div class="today-grid-cont">
       <Card className="h-fit flex gap-7 flex-col">
         <div class="flex justify-between w-full">
@@ -45,15 +46,42 @@
           {/each}
         </div>
       </Card>
-      <Card className="h-fit flex flex-col gap-8">
+      <!-- <Card className="h-fit flex flex-col gap-8">
         <h3 class="font-semibold text-[#05004E] text-[1.125rem] mb-1">
           Visitor Insights
         </h3>
         <img src="/graph1.svg" alt="" />
-      </Card>
+      </Card> -->
+      <!-- <Card className="h-fit"> -->
+      <Graph className="h-fit" title="Visitor Insights" imgPath="/graph1.svg" />
+      <!-- </Card> -->
     </div>
-    <div>HElllllllllllo</div>
-    <div></div>
+    <div class="today-grid">
+      <div>
+        <Graph className="" imgPath="/graph2.svg" title="Total Revenue" />
+      </div>
+      <div class="grid gap-3 grid-cols-2">
+        <Graph
+          className=""
+          imgPath="/graph3.svg"
+          title="Customer Satisfaction"
+        />
+        <Graph className="" imgPath="/graph4.svg" title="Target vs Reality" />
+      </div>
+    </div>
+    <div class="today-grid">
+      <div>
+        <Graph className="" imgPath="/graph2.svg" title="Total Revenue" />
+      </div>
+      <div class="grid gap-3 grid-cols-2">
+        <Graph
+          className=""
+          imgPath="/graph3.svg"
+          title="Customer Satisfaction"
+        />
+        <Graph className="" imgPath="/graph4.svg" title="Target vs Reality" />
+      </div>
+    </div>
   </main>
 </div>
 

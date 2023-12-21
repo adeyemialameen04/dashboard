@@ -6,7 +6,7 @@
 </script>
 
 <div class:showAside={show} class="overlay">
-  <aside class="py-4 px-3 flex flex-col gap-8 md:gap-6">
+  <aside class="py-4 px-3 flex flex-col gap-8 overflow-hidden md:gap-6">
     <div class="flex flex-col gap-3">
       <div class="flex items-center gap-2 justify-between">
         <div class="flex items-center gap-2">
