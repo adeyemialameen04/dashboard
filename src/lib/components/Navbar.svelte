@@ -2,7 +2,9 @@
   import Icon from "@iconify/svelte";
 </script>
 
-<nav class="flex py-4 justify-between w-full px-3 items-center gap-2">
+<nav
+  class="flex py-4 justify-between w-full px-3 items-center gap-2 overflow-hidden"
+>
   <div
     class="text-greyBlue text-[1rem] gap-1 md:gap-0 md:text-[1.3rem] flex items-center font-semibold"
   >
@@ -176,7 +178,11 @@
     </button>
     <div class="flex gap-2 w-full justify-between">
       <div class="flex gap-2">
-        <img src="/userImg.svg" class="h-[35px]" alt="" />
+        <img
+          src="/userImg.svg"
+          class="h-[35px] sm:h-[40px] md:h-[55px] object-cover"
+          alt=""
+        />
         <div class="hidden md:inline-block">
           <p>Musfiq</p>
           <small>Admin</small>
