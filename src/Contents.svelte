@@ -1,5 +1,6 @@
 <script>
   import Aside from "./lib/components/Aside.svelte";
+  import Main from "./lib/components/Main.svelte";
   import Navbar from "./lib/components/Navbar.svelte";
   let show = false;
   const handleNavbar = () => {
@@ -19,6 +20,7 @@
 </script>
 
 <div class="flex items-start">
-  <Aside {show} />
-  <Navbar on:click={handleNavbar} />
+  <Aside {show} on:click={handleNavbar} />
+  <!-- <Navbar on:click={handleNavbar} /> -->
+  <Main on:click={handleNavbar} />
 </div>
