@@ -1,7 +1,7 @@
 <script>
   import Aside from "./lib/components/Aside.svelte";
   import Navbar from "./lib/components/Navbar.svelte";
-  let show = true;
+  let show = false;
   const handleNavbar = () => {
     show = !show;
     console.log("JJJJJJJJJJJ");
@@ -13,9 +13,9 @@
     }
   };
 
-  //   window.addEventListener("resize", () => {
-  //     show = window.innerWidth > 768;
-  //   });
+  window.addEventListener("resize", () => {
+    show = window.innerWidth > 768;
+  });
 </script>
 
 <div class="flex items-start">
