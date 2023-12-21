@@ -4,7 +4,10 @@
   export let show;
 </script>
 
-<aside class:showAside={show} class="py-4 px-3 flex flex-col gap-6">
+<aside
+  class:showAside={show}
+  class="py-4 px-3 flex flex-col justify-between gap-6"
+>
   <div class="flex flex-col gap-3">
     <div class="flex items-center gap-2">
       <img
