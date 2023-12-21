@@ -120,4 +120,10 @@
       transform: translateX(0); */
     }
   }
+
+  .overlay {
+    /* display: none; */
+    position: sticky;
+    top: 0;
+  }
 </style>
