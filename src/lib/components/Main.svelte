@@ -60,7 +60,7 @@
       <div>
         <Graph className="" imgPath="/graph2.svg" title="Total Revenue" />
       </div>
-      <div class="grid gap-3 grid-cols-2">
+      <div class="grid gap-3 grid-cols-1 md:grid-cols-2">
         <Graph
           className=""
           imgPath="/graph3.svg"
@@ -73,7 +73,7 @@
       <div>
         <Graph className="" imgPath="/graph2.svg" title="Total Revenue" />
       </div>
-      <div class="grid gap-3 grid-cols-2">
+      <div class="grid gap-3 grid-cols-1 md:grid-cols-2">
         <Graph
           className=""
           imgPath="/graph3.svg"

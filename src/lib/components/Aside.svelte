@@ -121,9 +121,10 @@
     }
   }
 
-  .overlay {
-    /* display: none; */
-    position: sticky;
-    top: 0;
+  @media (min-width: 786px) {
+    .overlay {
+      position: sticky;
+      top: 0;
+    }
   }
 </style>
