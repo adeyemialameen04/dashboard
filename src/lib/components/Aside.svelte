@@ -8,8 +8,8 @@
   }
 </script>
 
-<div class:showAside={show} class="bg-red-400 w-full overlay">
-  <aside class="py-4 px-3 flex flex-col justify-between gap-6">
+<div class:showAside={show} class="overlay">
+  <aside class="py-4 px-3 flex flex-col gap-8 md:gap-6">
     <div class="flex flex-col gap-3">
       <div class="flex items-center gap-2 justify-between">
         <div class="flex items-center gap-2">
@@ -100,27 +100,16 @@
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.5);
-      /* display: grid; */
-      /* place-items: center; */
-      transition: var(--transition);
+      transition: all 350ms ease-in-out;
       visibility: hidden;
-      z-index: -10;
+      z-index: -1;
     }
     aside {
-      /* display: none; */
-      /* background-color: green; */
       position: fixed;
-      left: 0;
-      top: 0%;
+      inset: 0 20% 0 0;
       height: 100%;
       overflow-y: scroll;
       background-color: white;
-      /* opacity: 0; */
-      /* background-color: green; */
-      /* transform: translateX(-100%);
-      transition: all 350ms ease-in-out;
-      opacity: 0;
-      visibility: hidden; */
     }
 
     .showAside {
