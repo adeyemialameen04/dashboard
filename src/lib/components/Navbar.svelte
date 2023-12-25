@@ -14,7 +14,7 @@
         icon="quill:hamburger"
       />
     </button>
-    <p>Dashboard</p>
+    <p>Dashboardddddd</p>
   </div>
   <div class="flex gap-1 md:gap-2 lg:gap-9 justify-center items-center">
     <div
